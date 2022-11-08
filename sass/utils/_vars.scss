@@ -1,0 +1,15 @@
+$Color: (
+  "primary": #212121,
+  "border-white": #ececec,
+  "main-blue": #2196f3,
+  "black": #000000,
+  "grey": #757575,
+  "background-grey": #2f303a,
+  "white": #ffffff,
+  "background-white": #f5f4fa,
+  "light-grey": #afb1b8,
+);
+
+@function getColor($key) {
+  @return map-get($Color, $key);
+}

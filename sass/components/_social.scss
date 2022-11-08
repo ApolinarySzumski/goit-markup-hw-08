@@ -1,0 +1,23 @@
+.social {
+  box-sizing: border-box;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: getColor("white");
+  &:hover {
+    background-color: getColor("main-blue");
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    cursor: pointer;
+    & .social-icon {
+      background-color: getColor("main-blue");
+      transition: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 250ms;
+      fill: getColor("white");
+      cursor: pointer;
+    }
+  }
+}

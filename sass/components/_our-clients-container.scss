@@ -1,0 +1,33 @@
+.our-clients-container {
+  box-sizing: border-box;
+  display: flex;
+  padding-bottom: 94px;
+  gap: 30px;
+  &__image {
+    box-sizing: border-box;
+    display: flex;
+    width: 170px;
+    height: 92px;
+    @include border(getColor("light-grey"));
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      border-color: getColor("main-blue");
+      transition: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 250ms;
+      cursor: pointer;
+      & .our-clients-container__icon {
+        fill: getColor("main-blue");
+        transition: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+        cursor: pointer;
+      }
+    }
+  }
+  &__icon {
+    fill: getColor("light-grey");
+    width: 106px;
+    height: 60px;
+  }
+}

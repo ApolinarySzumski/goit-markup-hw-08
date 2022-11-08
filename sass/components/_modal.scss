@@ -1,0 +1,161 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  min-height: 581px;
+  background-color: getColor("white");
+  &__close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: getColor("white");
+    @include border(rgba(0, 0, 0, 0.1));
+    border-radius: 50%;
+    cursor: pointer;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__cross {
+    width: 11px;
+    height: 11px;
+    fill: getColor("black");
+  }
+  &__form-header {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.172;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: getColor("primary");
+    margin-top: 40px;
+    margin-bottom: 12px;
+  }
+  &__container-form {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px;
+    gap: 10px;
+  }
+  &__describe {
+    font-size: 12px;
+    line-height: 1.172;
+    letter-spacing: 0.01em;
+    color: getColor("grey");
+    display: block;
+    margin-bottom: 4px;
+  }
+  &__input {
+    position: relative;
+    width: 448px;
+    height: 40px;
+    @include border(rgba(33, 33, 33, 0.2));
+    padding-left: 42px;
+    &:focus {
+      border-color: getColor("main-blue");
+      outline: none;
+      transition: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 250ms;
+    }
+  }
+  &__person-icon {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    fill: getColor("primary");
+    left: 55px;
+    top: 107px;
+  }
+  &__data-form {
+    &:focus-within .modal__person-icon {
+      @extend %hover-fill-blue-extend;
+    }
+  }
+  &__telephone-icon {
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    fill: getColor("primary");
+    left: 54.27px;
+    top: 174.26px;
+  }
+  &__telephone-form {
+    &:focus-within .modal__telephone-icon {
+      @extend %hover-fill-blue-extend;
+    }
+  }
+  &__email-icon {
+    width: 15px;
+    height: 12px;
+    position: absolute;
+    fill: getColor("primary");
+    left: 53.5px;
+    top: 243px;
+  }
+  &__email-form {
+    &:focus-within .modal-email-icon {
+      @extend %hover-fill-blue-extend;
+    }
+  }
+  &__textarea-form {
+    margin-top: 10px;
+    &:focus-within .modal__textarea {
+      border-color: getColor("main-blue");
+      transition: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 250ms;
+      outline: none;
+    }
+  }
+  &__textarea {
+    width: 448px;
+    height: 120px;
+    resize: none;
+    padding: 12px 16px;
+    @include border(rgba(33, 33, 33, 0.2));
+    border-radius: 4px;
+    &::placeholder {
+      color: rgba(117, 117, 117, 0.5);
+      font-size: 12px;
+      line-height: 1.172;
+      letter-spacing: 0.01em;
+    }
+  }
+  &__regulations-input {
+    background-color: getColor("blue");
+    border-radius: 2px;
+  }
+  &__regulations-text {
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: getColor("grey");
+  }
+  &__underlined {
+    color: getColor("main-blue");
+    text-decoration: underline;
+  }
+  &__form-button {
+    width: 200px;
+    height: 50px;
+    color: getColor("white");
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    text-align: center;
+    background-color: getColor("main-blue");
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    position: absolute;
+    left: 164px;
+    top: 491px;
+    cursor: pointer;
+  }
+}

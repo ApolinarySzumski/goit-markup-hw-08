@@ -1,0 +1,14 @@
+%footer-list-extend {
+  line-height: 1.71;
+  font-style: normal;
+}
+%hover-color-blue-extend {
+  color: getColor("main-blue");
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+%hover-fill-blue-extend {
+  fill: getColor("main-blue");
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
