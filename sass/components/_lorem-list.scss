@@ -1,35 +1,49 @@
-@media (min-width: 320px) and (max-width: 480px) {
-  .lorem-list {
-    list-style: none;
+.lorem-list {
+  list-style: none;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
+  &__lorem-image {
     box-sizing: border-box;
+    height: 120px;
+    width: 100%;
+    background-color: #f5f4fa;
     display: flex;
-    flex-direction: row;
-    gap: 30px;
-    flex-wrap: wrap;
-    &__lorem-image {
-      box-sizing: border-box;
-      height: 120px;
-      width: 270px;
-      background-color: #f5f4fa;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 94px 0 30px 0;
-    }
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  &--header-4 {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    line-height: 1.14;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  &--lorem {
+    color: getColor("grey");
+    line-height: 1.71;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+  }
+}
+@media (min-width: 768px) {
+  .lorem-list--header-4 {
+    justify-content: flex-start;
+  }
+  .lorem-list__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media (min-width: 1200px) {
+  .lorem-list {
+    flex-wrap: nowrap;
     &--header-4 {
-      display: flex;
-      justify-content: center;
-      font-weight: 700;
-      line-height: 1.14;
-      margin-bottom: 10px;
-      margin-left: 0;
-      margin-right: 0;
-    }
-    &--lorem {
-      color: getColor("grey");
-      line-height: 1.71;
-      font-size: 14px;
-      letter-spacing: 0.03em;
+      justify-content: flex-start;
     }
   }
 }
