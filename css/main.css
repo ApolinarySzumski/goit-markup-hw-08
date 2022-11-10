@@ -55,6 +55,18 @@ body {
   align-items: flex-start;
   padding: 24px 0 25px 0;
 }
+.header-left__button {
+  cursor: pointer;
+  border: none;
+  background-color: #ffffff;
+  position: absolute;
+  top: 16px;
+  right: 15px;
+}
+.header-left__icon {
+  width: 40px;
+  height: 40px;
+}
 
 .header-mid {
   box-sizing: border-box;
@@ -185,7 +197,7 @@ body {
   justify-content: center;
   margin-bottom: 30px;
 }
-.lorem-list--header-4 {
+.lorem-list__header-4 {
   display: flex;
   justify-content: center;
   font-weight: 700;
@@ -194,7 +206,7 @@ body {
   margin-left: 0;
   margin-right: 0;
 }
-.lorem-list--lorem {
+.lorem-list__lorem {
   color: #757575;
   line-height: 1.71;
   font-size: 14px;

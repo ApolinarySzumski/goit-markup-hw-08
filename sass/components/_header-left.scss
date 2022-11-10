@@ -4,4 +4,16 @@
   display: flex;
   align-items: flex-start;
   padding: 24px 0 25px 0;
+  &__button {
+    cursor: pointer;
+    border: none;
+    background-color: getColor("white");
+    position: absolute;
+    top: 16px;
+    right: 15px;
+  }
+  &__icon {
+    width: 40px;
+    height: 40px;
+  }
 }

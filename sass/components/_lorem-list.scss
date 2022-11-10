@@ -15,7 +15,7 @@
     justify-content: center;
     margin-bottom: 30px;
   }
-  &--header-4 {
+  &__header-4 {
     display: flex;
     justify-content: center;
     font-weight: 700;
@@ -24,7 +24,7 @@
     margin-left: 0;
     margin-right: 0;
   }
-  &--lorem {
+  &__lorem {
     color: getColor("grey");
     line-height: 1.71;
     font-size: 14px;
