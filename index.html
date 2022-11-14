@@ -533,8 +533,43 @@
         </div>
       </div>
     </div>
-    <div class="mobile-menu js-menu-container is-open">
-      <button class="js-close-menu" type="button"></button>
+    <div class="mobile-menu js-menu-container">
+      <button class="mobile-menu__button js-close-menu" type="button">
+        <svg class="mobile-menu__cross">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu__navigation">
+        <li>
+          <a class="mobile-menu__navigation-item" href="./index.html"
+            >Agencja</a
+          >
+        </li>
+        <li>
+          <a class="mobile-menu__navigation-item" href="./portfolio.html"
+            >Portfolio</a
+          >
+        </li>
+        <li><a class="mobile-menu__navigation-item" href="">Kontakt</a></li>
+      </ul>
+      <a class="mobile-menu__telephone" href="tel:48111111111"
+        >+48 111 111 111</a
+      >
+      <a class="mobile-menu__email" href="mailto:info@devstudio.com"
+        >info@devstudio.com</a
+      >
+      <ul class="mobile-menu__socials">
+        <li class="mobile-menu__line">
+          <a class="mobile-menu__link" href="">Instagram</a>
+        </li>
+        <li class="mobile-menu__line">
+          <a class="mobile-menu__link" href="">Twitter</a>
+        </li>
+        <li class="mobile-menu__line">
+          <a class="mobile-menu__link" href="">Facebook</a>
+        </li>
+        <li><a class="mobile-menu__link" href="">LinkedIn</a></li>
+      </ul>
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
