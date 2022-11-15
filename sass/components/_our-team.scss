@@ -1,6 +1,10 @@
 .our-team {
   box-sizing: border-box;
   background-color: getColor("background-white");
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 60px 0;
+}
+@media (min-width: 1200px) {
+  .our-team {
+    padding: 94px 0;
+  }
 }

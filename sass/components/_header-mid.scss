@@ -1,29 +1,71 @@
-.header-mid {
-  box-sizing: border-box;
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding-left: 93px;
-  gap: 46px;
-  &__menu {
-    text-decoration: none;
-    color: getColor("primary");
-    &:visited {
+@media (max-width: 768px) {
+  .header-mid {
+    visibility: hidden;
+  }
+}
+@media (min-width: 768px) {
+  .header-mid {
+    box-sizing: border-box;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-left: 83px;
+    gap: 60px;
+    &__menu {
+      text-decoration: none;
       color: getColor("primary");
+      &:visited {
+        color: getColor("primary");
+      }
+      &:hover {
+        color: getColor("main-blue");
+        transition: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+      }
     }
-    &:hover {
-      @extend %hover-color-blue-extend;
+    &--current::after {
+      display: block;
+      width: 100%;
+      height: 4px;
+      background-color: getColor("main-blue");
+      border-radius: 2px;
+      content: "";
+      position: relative;
+      top: 32px;
     }
   }
-  &--current::after {
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color: getColor("main-blue");
-    border-radius: 2px;
-    content: "";
-    position: relative;
-    top: 32px;
+}
+@media (min-width: 1200px) {
+  .header-mid {
+    box-sizing: border-box;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-left: 93px;
+    gap: 46px;
+    &__menu {
+      text-decoration: none;
+      color: getColor("primary");
+      &:visited {
+        color: getColor("primary");
+      }
+      &:hover {
+        color: getColor("main-blue");
+        transition: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+      }
+    }
+    &--current::after {
+      display: block;
+      width: 100%;
+      height: 4px;
+      background-color: getColor("main-blue");
+      border-radius: 2px;
+      content: "";
+      position: relative;
+      top: 32px;
+    }
   }
 }

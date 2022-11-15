@@ -1,4 +1,9 @@
 .our-clients {
   box-sizing: border-box;
-  padding-top: 94px;
+  padding: 60px 0;
+}
+@media (min-width: 1200px) {
+  .our-clients {
+    padding: 94px 0;
+  }
 }

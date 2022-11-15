@@ -148,9 +148,10 @@
               <img
                 class="projects-list-graphics"
                 src="images/Projekt-1.jpg"
-                alt="1"
-                width="370"
-                height="294"
+                srcset="images/Projekt-1@2x.jpg"
+                alt="Project-1"
+                width="100%"
+                height="auto"
               />
             </li>
             <li>
@@ -162,9 +163,10 @@
               <img
                 class="projects-list-graphics"
                 src="images/Projekt-2.jpg"
-                alt="2"
-                width="370"
-                height="294"
+                srcset="images/Projekt-2@2x.jpg"
+                alt="Project-2"
+                width="100%"
+                height="auto"
               />
             </li>
             <li>
@@ -176,9 +178,10 @@
               <img
                 class="projects-list-graphics"
                 src="images/Projekt-3.jpg"
-                alt="3"
-                width="370"
-                height="294"
+                srcset="images/Projekt-3@2x.jpg"
+                alt="Project-3"
+                width="100%"
+                height="auto"
               />
             </li>
           </ul>
@@ -192,9 +195,10 @@
               <figure class="people-list__picture">
                 <img
                   src="images/Product-Designer.jpg"
+                  srcset="images/Product-Designer@2x.jpg"
                   alt="John Doe Product Designer"
-                  width="270"
-                  height="260"
+                  width="100%"
+                  height="auto"
                 />
                 <figcaption class="people-list__picture-index">
                   John Doe<br /><span
@@ -231,9 +235,10 @@
               <figure class="people-list__picture">
                 <img
                   src="images/Frontend-Developer.jpg"
+                  srcset="images/Frontend-Developer@2x.jpg"
                   alt="John Doe Frontend Developer"
-                  width="270"
-                  height="260"
+                  width="100%"
+                  height="auto"
                 />
                 <figcaption class="people-list__picture-index">
                   John Doe<br /><span
@@ -270,9 +275,10 @@
               <figure class="people-list__picture">
                 <img
                   src="images/Marketing.jpg"
+                  srcset="images/Marketing@2x.jpg"
                   alt="John Doe Marketing"
-                  width="270"
-                  height="260"
+                  width="100%"
+                  height="auto"
                 />
                 <figcaption class="people-list__picture-index">
                   John Doe<br /><span
@@ -309,9 +315,10 @@
               <figure class="people-list__picture">
                 <img
                   src="images/UI-Designer.jpg"
+                  srcset="images/UI-Designer@2x.jpg"
                   alt="John Doe UI Designer"
-                  width="270"
-                  height="260"
+                  width="100%"
+                  height="auto"
                 />
                 <figcaption class="people-list__picture-index">
                   John Doe<br /><span
@@ -350,121 +357,139 @@
       <section class="our-clients">
         <div class="container">
           <h2 class="header-2">Nasi klienci</h2>
-          <div class="our-clients-container">
-            <div class="our-clients-container__image">
-              <svg class="our-clients-container__icon">
-                <use href="./images/icons.svg#icon-our-clients-1"></use>
-              </svg>
-            </div>
-            <div class="our-clients-container__image">
-              <svg class="our-clients-container__icon">
-                <use href="./images/icons.svg#icon-our-clients-2"></use>
-              </svg>
-            </div>
-            <div class="our-clients-container__image">
-              <svg class="our-clients-container__icon">
-                <use href="./images/icons.svg#icon-our-clients-3"></use>
-              </svg>
-            </div>
-            <div class="our-clients-container__image">
-              <svg class="our-clients-container__icon">
-                <use href="./images/icons.svg#icon-our-clients-4"></use>
-              </svg>
-            </div>
-            <div class="our-clients-container__image">
-              <svg class="our-clients-container__icon">
-                <use href="./images/icons.svg#icon-our-clients-5"></use>
-              </svg>
-            </div>
-            <div class="our-clients-container__image">
-              <svg class="our-clients-container__icon">
-                <use href="./images/icons.svg#icon-our-clients-6"></use>
-              </svg>
-            </div>
-          </div>
+          <ul class="our-clients-container">
+            <li class="our-clients-container__item">
+              <div class="our-clients-container__image">
+                <svg class="our-clients-container__icon">
+                  <use href="./images/icons.svg#icon-our-clients-1"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="our-clients-container__item">
+              <div class="our-clients-container__image">
+                <svg class="our-clients-container__icon">
+                  <use href="./images/icons.svg#icon-our-clients-2"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="our-clients-container__item">
+              <div class="our-clients-container__image">
+                <svg class="our-clients-container__icon">
+                  <use href="./images/icons.svg#icon-our-clients-3"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="our-clients-container__item">
+              <div class="our-clients-container__image">
+                <svg class="our-clients-container__icon">
+                  <use href="./images/icons.svg#icon-our-clients-4"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="our-clients-container__item">
+              <div class="our-clients-container__image">
+                <svg class="our-clients-container__icon">
+                  <use href="./images/icons.svg#icon-our-clients-5"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="our-clients-container__item">
+              <div class="our-clients-container__image">
+                <svg class="our-clients-container__icon">
+                  <use href="./images/icons.svg#icon-our-clients-6"></use>
+                </svg>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
     <footer class="container-footer">
       <div class="container">
-        <div class="container-inside-footer">
-          <ul class="footer-list">
-            <li>
-              <a class="paragraph" href="index.html"
-                >Web<span class="footer-list__logo">Studio</span></a
-              >
-            </li>
-            <li>
-              <address class="footer-list__white-text">
-                m. Warszawa, Aleje Jerozolimskie 21
-              </address>
-            </li>
-            <li>
-              <address>
-                <a
-                  class="footer-list__mail-number"
-                  href="mailto:info@example.com"
-                  >info@example.com</a
+        <ul class="container-inside-footer">
+          <li class="container-inside-footer__item">
+            <ul class="footer-list">
+              <li>
+                <a class="paragraph" href="index.html"
+                  >Web<span class="footer-list__logo">Studio</span></a
                 >
-              </address>
-            </li>
-            <li>
-              <address>
-                <a class="footer-list__mail-number" href="tel:48111111111"
-                  >+48 111 111 111</a
-                >
-              </address>
-            </li>
-          </ul>
-          <div class="join-us">
-            <h3 class="join-us__header-3">DOŁĄCZ DO NAS</h3>
-            <div class="join-us__container-social-media">
-              <div class="join-us__social-media">
-                <svg class="join-us__icon">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </div>
-              <div class="join-us__social-media">
-                <svg class="join-us__icon">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </div>
-              <div class="join-us__social-media">
-                <svg class="join-us__icon">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </div>
-              <div class="join-us__social-media">
-                <svg class="join-us__icon">
-                  <use href="./images/icons.svg#icon-linkedin2"></use>
-                </svg>
+              </li>
+              <li>
+                <address class="footer-list__white-text">
+                  m. Warszawa, Aleje Jerozolimskie 21
+                </address>
+              </li>
+              <li>
+                <address>
+                  <a
+                    class="footer-list__mail-number"
+                    href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </address>
+              </li>
+              <li>
+                <address>
+                  <a class="footer-list__mail-number" href="tel:48111111111"
+                    >+48 111 111 111</a
+                  >
+                </address>
+              </li>
+            </ul>
+          </li>
+          <li class="container-inside-footer__item">
+            <div class="join-us">
+              <h3 class="join-us__header-3">DOŁĄCZ DO NAS</h3>
+              <div class="join-us__container-social-media">
+                <div class="join-us__social-media">
+                  <svg class="join-us__icon">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </div>
+                <div class="join-us__social-media">
+                  <svg class="join-us__icon">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </div>
+                <div class="join-us__social-media">
+                  <svg class="join-us__icon">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </div>
+                <div class="join-us__social-media">
+                  <svg class="join-us__icon">
+                    <use href="./images/icons.svg#icon-linkedin2"></use>
+                  </svg>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="newsletter">
-            <form>
-              <div class="newsletter__container-form">
-                <label>
-                  <span class="newsletter__sign-up"
-                    >ZAPISZ SIĘ DO NEWSLETTERA</span
-                  >
-                  <input
-                    class="newsletter__input"
-                    type="email"
-                    name="email-newsletter"
-                    placeholder="E-mail"
-                  />
-                </label>
-                <button type="submit" class="newsletter__button">
-                  Zapisz się
-                  <svg class="newsletter__submit-svg">
-                    <use href="./images/icons.svg#icon-icon-send"></use>
-                  </svg>
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
+          </li>
+          <li class="container-inside-footer__item">
+            <div class="newsletter">
+              <form>
+                <div class="newsletter__container-form">
+                  <label>
+                    <span class="newsletter__sign-up"
+                      >ZAPISZ SIĘ DO NEWSLETTERA</span
+                    >
+                    <input
+                      class="newsletter__input"
+                      type="email"
+                      name="email-newsletter"
+                      placeholder="E-mail"
+                    />
+                  </label>
+                  <button type="submit" class="newsletter__button">
+                    Zapisz się
+                    <svg class="newsletter__submit-svg">
+                      <use href="./images/icons.svg#icon-icon-send"></use>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </li>
+        </ul>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -533,7 +558,7 @@
         </div>
       </div>
     </div>
-    <div class="mobile-menu js-menu-container">
+    <div class="mobile-menu js-menu-container is-open">
       <button class="mobile-menu__button js-close-menu" type="button">
         <svg class="mobile-menu__cross">
           <use href="./images/icons.svg#icon-close"></use>
@@ -572,7 +597,7 @@
       </ul>
     </div>
     <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

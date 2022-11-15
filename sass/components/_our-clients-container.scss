@@ -1,12 +1,18 @@
 .our-clients-container {
+  list-style: none;
   box-sizing: border-box;
   display: flex;
-  padding-bottom: 94px;
+  flex-direction: row;
+  justify-content: center;
   gap: 30px;
+  flex-wrap: wrap;
+  &__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
   &__image {
     box-sizing: border-box;
     display: flex;
-    width: 170px;
+    width: 100%;
     height: 92px;
     @include border(getColor("light-grey"));
     border-radius: 4px;
@@ -29,5 +35,17 @@
     fill: getColor("light-grey");
     width: 106px;
     height: 60px;
+  }
+}
+@media (min-width: 768px) {
+  .our-clients-container {
+    &__item {
+      flex-basis: calc((100% - 60px) / 3);
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .our-clients-container {
+    flex-wrap: nowrap;
   }
 }

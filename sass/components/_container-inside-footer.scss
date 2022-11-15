@@ -1,4 +1,21 @@
 .container-inside-footer {
+  list-style: none;
   box-sizing: border-box;
   display: flex;
+  padding: 60px 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .container-inside-footer {
+    justify-content: flex-start;
+    padding: 60px 74px 60px 61px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-inside-footer {
+    justify-content: flex-start;
+    padding: 60px 0 60px 0;
+    flex-wrap: nowrap;
+  }
 }

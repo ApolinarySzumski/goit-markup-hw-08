@@ -3,11 +3,13 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap: 30px;
+  justify-content: center;
   position: relative;
+  flex-wrap: wrap;
   &__container-image {
     box-sizing: border-box;
-    display: flex;
+    display: none;
     width: 370px;
     height: 70px;
     justify-content: center;
@@ -22,5 +24,13 @@
     line-height: 1.17;
     letter-spacing: 0.03em;
     color: getColor("white");
+  }
+}
+@media (min-width: 1200px) {
+  .projects-list {
+    flex-wrap: nowrap;
+    &__container-image {
+      display: flex;
+    }
   }
 }

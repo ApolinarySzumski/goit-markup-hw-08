@@ -1,9 +1,15 @@
 .header-2 {
   box-sizing: border-box;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
+}
+@media (min-width: 1200px) {
+  .header-2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }

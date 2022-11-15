@@ -1,10 +1,10 @@
 .footer-list {
-  padding-top: 60px;
-  padding-bottom: 60px;
   list-style: none;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   &__white-text {
     color: getColor("white");
     font-size: 14px;
@@ -27,5 +27,11 @@
     font-size: 26px;
     font-weight: 700;
     line-height: 1.19;
+  }
+}
+@media (min-width: 1200px) {
+  .footer-list {
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 }
