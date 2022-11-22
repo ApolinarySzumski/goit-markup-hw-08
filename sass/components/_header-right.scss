@@ -1,7 +1,5 @@
-@media (max-width: 768px) {
-  .header-right {
-    visibility: hidden;
-  }
+.header-right {
+  display: none;
 }
 @media (min-width: 768px) {
   .header-right {
@@ -30,26 +28,8 @@
 }
 @media (min-width: 1200px) {
   .header-right {
-    box-sizing: border-box;
-    list-style: none;
-    display: flex;
     flex-direction: row;
-    align-items: flex-start;
     padding: 0 0 0 345px;
     gap: 30px;
-    &__mail-number {
-      font-size: 14px;
-      color: getColor("grey");
-      text-decoration: none;
-      &:hover {
-        fill: getColor("main-blue");
-        color: getColor("main-blue");
-        transition: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 250ms;
-      }
-      & svg {
-        margin-right: 10px;
-      }
-    }
   }
 }
