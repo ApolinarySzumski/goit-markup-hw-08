@@ -2,13 +2,14 @@
   list-style: none;
   box-sizing: border-box;
   display: flex;
+  flex-direction: column;
   padding: 60px 0;
   flex-wrap: wrap;
   justify-content: center;
 }
 @media (min-width: 768px) {
   .container-inside-footer {
-    justify-content: flex-start;
+    flex-direction: row;
     padding: 60px 74px 60px 61px;
   }
 }

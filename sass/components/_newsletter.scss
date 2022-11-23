@@ -22,7 +22,7 @@
     margin-bottom: 20px;
   }
   &__input {
-    padding: 15px 295px 15px 16px;
+    padding: 15px 16px;
     background-color: #2f303a;
     font-size: 16px;
     line-height: 1.25;
@@ -40,19 +40,19 @@
   &__button {
     box-sizing: border-box;
     display: flex;
+    justify-content: center;
     position: relative;
     height: 50px;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.875;
     letter-spacing: 0.06em;
-    text-align: center;
     color: getColor("white");
     background-color: getColor("main-blue");
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: none;
-    margin-top: 36px;
+    margin: 36px auto 0 auto;
     padding: 10px 76px 10px 42px;
     cursor: pointer;
   }
@@ -78,7 +78,8 @@
       width: 358px;
     }
     &__button {
-      margin-left:12px;
+      margin:0 0 0 12px;
+      display: inline-block;
     }
   }
 }
